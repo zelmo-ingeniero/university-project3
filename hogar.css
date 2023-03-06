@@ -1,0 +1,217 @@
+/*primer intento*/
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,regular,500,700,900);
+/*sanserif facil de leer*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+/*serif como para frases o blogs*/
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic);
+/*tipo maquina de escribir*/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/*cursiva como de niña*/
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+/*Para titulos grandes*/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P:regular);
+/*si usas las fuentes en el html no hace falta esto supongo*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu';
+    font-size: 24px;    
+}
+#barra-superior{
+    background: #424242;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#barra-superior a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.configuracion{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    margin-right: 10px;
+}
+#titulo{
+    font-family: 'source code pro';
+}
+#contenedor-estados{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+.mas{
+    padding: 20px 0px;
+}
+#contenedor-estados a{
+    color: black;
+    text-decoration: none;
+}
+#animacion{
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background: #003FFF;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#estado-miniatura{
+    max-width: 150px;
+    min-width: 150px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid gray;    
+}
+#estado-miniatura img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+#estado-miniatura video{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+#estado-miniatura p{
+    width: 100%;
+    max-height: 20px;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;    
+}
+#contenedor-publicaciones{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#nueva-publicacion{
+    width: 65%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#nueva-publicacion > textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+#nueva-publicacion > button{
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+    background: #424242;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#publicacion{
+    border: 1px solid gray;
+    width: 65%;
+    margin-bottom: 40px;
+}
+#publicacion-cabeza{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    display: flex;
+}
+.publicacion-cabeza-foto{
+    width: 24px;
+    height: 24px;  
+    margin-right: 20px;
+}
+.publicacion-cabeza-opciones{
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+#publicacion > h6{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+#publicacion > p {
+    padding: 20px;
+}
+.publicacion-cabeza-fecha{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+#contador-megusta, #contador-molesta{
+    padding-left: 20px;
+    font-size: 18px;
+}
+#publicacion-botones{
+    border-top: 1px solid gray;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.gusta-molesta {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+#publicacion-botones > button{
+    width: 250px;
+    margin-inline: auto;
+    padding: 10px;
+    background: #424242;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+nav{
+    height: 150px;
+    padding: 10px;
+    background: #424242;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

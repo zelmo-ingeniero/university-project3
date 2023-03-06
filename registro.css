@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: ubuntu;
+    font-size: 24px;    
+}
+#registro{
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+#registro > h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+#registro-pregunta{
+    padding: 10px 40px 20px 40px;
+}
+#registro-pregunta > label{
+    font-size: 20px;
+}
+#registro-pregunta input{
+    width: calc(100% - 24px);
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 24px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#registro-pregunta > span{
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 24px;
+    padding-left: 0px;
+    display: block;
+    font-size: 14px;
+}
+#registro-botones{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #424242;
+}
+#registro-botones a, button{
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#registro-botones a{
+    height: 50px;    
+    background: #424242;
+    text-decoration: none;
+}
+#registro-botones button{
+    background: #0003ff;    
+}
+.icono{
+    padding-right: 10px;
+}
+#pie-de-pagina{
+    background: #424242;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#pie-de-pagina-columna{
+    width: 30%;
+    margin: 40px;
+    text-align: center;
+}
+#pie-de-pagina-columna > p{
+    font-size: 14px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaTa | hogar</title>
+    <link rel="stylesheet" href="hogar.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,regular,500,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--
+        Puedes generar estados en el html dando clic en el boton 
+        de la estrella que dice animacion
+        
+        Tambien puedes generar una publicacion escribiendo en el cuadro
+    -->
+</head>
+<body>
+    <nav id="barra-superior">
+        <p id="titulo">TaTa code</p>
+        <a href="registro.html">
+            <span class="material-symbols-outlined configuracion">
+                settings
+            </span>
+            Configuracion
+        </a>
+    </nav>
+    <div id="contenedor-estados">
+        <div id="contenedor-estados-botones">
+            <button id="animacion">
+                <span class="material-symbols-outlined mas">
+                    star
+                </span>
+                <p>Animacion fade js</p>
+            </button>
+            <a href="crear-estados.html">
+                <div id="estado-miniatura">
+                    <span class="material-symbols-outlined mas">
+                        add
+                    </span>
+                    <p>Crear estado</p>
+                </div>            
+            </a>
+        </div>
+        <!--
+        <div id="estado-miniatura">
+            <img src="1.png" alt="primer estado">
+            <p>mike</p>
+        </div>
+        <div id="estado-miniatura">
+            <img src="2.gif" alt="segundo estado">
+            <p>juan</p>
+        </div>  
+        <div id="estado-miniatura">
+            <img src="3.png" alt="tercer estado">
+            <p>ann</p>
+        </div>
+        -->
+    </div>
+    <div id="nueva-publicacion">
+        <textarea placeholder="¿En que estas pensando?" required></textarea>
+        <button id="but-publicar">
+            <span class="material-symbols-outlined">
+                send
+            </span>        
+            Nueva publicacion con slide
+        </button>
+    </div>
+    <article id="contenedor-publicaciones">
+        <div id="publicacion">
+            <div id="publicacion-cabeza">
+                <span class="material-symbols-outlined publicacion-cabeza-foto">
+                    person
+                </span>
+                <h2>Willy</h2>
+                <span class="material-symbols-outlined publicacion-cabeza-opciones">
+                    more_vert
+                </span>
+            </div>
+            <h6>
+                <span class="material-symbols-outlined publicacion-cabeza-fecha">
+                    calendar_month
+                </span>
+                16 de Septiembre del 2022 a las 15:15
+            </h6>
+            <p>Fuente tipo coodigo de maquina de escribir. Amet exercitationem harum corrupti totam alias ad distinctio enim nostrum officia sequi, aliquid pariatur vel inventore maiores unde earum excepturi vero porro.</p>
+            <span id="contador-megusta">Me gusta 0</span>
+            <span id="contador-molesta">Me molesta 0</span>
+            <div id="publicacion-botones">
+                <button>
+                    <span class="material-symbols-outlined gusta-molesta">
+                        thumb_up
+                    </span>
+                    Me gusta
+                </button> 
+                <button>
+                    <span class="material-symbols-outlined gusta-molesta">
+                        thumb_down
+                    </span>
+                    Me molesta
+                </button> 
+            </div>
+        </div>
+    </article>
+    <nav>
+        <h3>Copyryght &copy; zelmo ingeniero 2022 </h3>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="hogar.js"></script>
+</body>
+</html>

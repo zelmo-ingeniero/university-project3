@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaTa | Crea tu propio estado</title>
+    <link rel="stylesheet" href="crear-estados.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Para los de UI de la pagina de jQuery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!--
+        Cuando añades contenido muiltimedia este se desliza
+
+        Cuando de las al de ver movimeinto se ejecuta ahora si una nueva animacion
+    -->
+</head>
+<body>
+    <nav>
+        <a href="hogar.html">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </a>
+    </nav>
+    <section id="previsualizacion">
+        <label for="archivo" id="botoncito">
+            <span class="material-symbols-outlined">
+                photo_camera
+            </span>
+            Subir contenido
+        </label>
+        <input type="file" name="archivo" id="archivo" required>
+        <div id="receptor">
+            <!--aqui llega la multimedia-->
+        </div>
+        <textarea name="" id="texto" placeholder="Escribe algo..."></textarea>
+        <button>
+            <span class="material-symbols-outlined">
+                send
+            </span>
+            Ver movimiento
+        </button>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="crear-estados.js"></script>
+</body>
+</html>

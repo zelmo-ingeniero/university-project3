@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaTa | Creacion de cuenta</title>
+    <link rel="stylesheet" href="registro.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular" rel="stylesheet">
+    <!--Para los de UI de la pagina de jQuery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!--
+        Se pusieron nuevos src necesarios
+        
+        En el html se añadio el footer 
+        
+        Se actualizaron atributos de los input sobretodo
+        
+        El de la fecha tiene un calendario que no funciona pero es de jQuery
+        
+        Se toma la info desde los inputs
+
+        Tal vez no tiene animaciones pero si aprendi a navegar por la 
+        documentacion de jQuery UI
+    -->
+</head>
+<body>
+    <form id="registro">
+        <h1>Ingresa tus datos</h1>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                Nombre de usuario
+            </label>
+            <input type="text" id="nu" placeholder="Como te gusta que te digan?" title="Esto aparecera alado de tu icono siempre, es lo que veran los demas" autofocus required>
+            <span></span>
+        </div>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    badge
+                </span>                
+                Tu nombre completo
+            </label>
+            <input type="text" id="nc" placeholder="Nombres y apellidos" title="Solamente aparece en tu perfil, no puedes ingresar numeros ni simbolos">
+            <span>Solamente aparece en tu perfil, no puedes ingresar numeros ni simbolos</span>
+        </div>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                Correo electronico
+            </label>
+            <input type="text" id="ce" placeholder="nombre@dominio.com" title="Proximamente sera verificado para mayor seguridad" required>
+            <span>Proximamente sera verificado para mayor seguridad</span>
+        </div>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>
+                Fecha de nacimiento
+            </label>
+            <input type="date" id="in-fecha" title="Puedes escribirlo o da clic en el icono" min="1904-11-29" max="2004-11-30" required>
+            <span>Puedes escribirlo o da clic en el icono</span>
+        </div>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    lock
+                </span>
+                Contraseña
+            </label>
+            <input type="password" id="c" title="Con esta iniciaras sesion. Recomendado usar 1 mayuscula, 1 numero y 1 simbolo" autocomplete="off" minlength="6" maxlength="24" pattern="{A-Z}{1}{0-9}{1}" required>
+            <span>Con esta iniciaras sesion. Recomendado usar 1 mayuscula, 1 numero y 1 simbolo</span>
+        </div>
+        <div id="registro-pregunta">
+            <label>
+                <span class="material-symbols-outlined">
+                    lock_clock
+                </span>
+                Vuelve a escribir la contraseña
+            </label>
+            <input type="password" id="vec" title="Debe coincidir con la que escribiste arriba" autocomplete="off" minlength="6" maxlength="24" required>
+            <span>Debe coincidir con la que escribiste arriba</span>
+        </div>
+        <div id="registro-botones">
+            <a href="login.html">
+                <span class="material-symbols-outlined icono">
+                    key
+                </span>
+                Iniciar sesion
+            </a>
+            <button id="crear">
+                <span class="material-symbols-outlined icono">
+                    add
+                </span>
+                Crear
+            </button>
+        </div>
+    </form>
+    <footer id="pie-de-pagina">
+        <div id="pie-de-pagina-columna">
+            <h1>Lorem juju</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aut, quod incidunt aperiam placeat nesciunt minima recusandae quibusdam laudantium. Quos, ratione? Adipisci expedita consectetur quas a cumque officia! Dignissimos, at.</p>
+        </div>
+        <div id="pie-de-pagina-columna">
+            <h1>Lorem juju</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero dolor reprehenderit commodi rem sapiente aspernatur sequi accusamus quidem quia ullam voluptatum veritatis enim obcaecati, dolorum sit, facere corrupti aperiam quo?</p>
+        </div>
+        <div id="pie-de-pagina-columna">
+            <h1>Lorem juju</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor corporis aliquam enim, animi velit magnam nulla quasi, libero in hic blanditiis facere. Odio placeat minima suscipit vel quisquam, tenetur iste?</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="registro.js"></script>
+</body>
+</html>
